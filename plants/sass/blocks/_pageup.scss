@@ -1,0 +1,12 @@
+.pageup {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    width: 35px;
+    height: 35px;
+    z-index: 10;
+
+    img {
+        width: 100%;
+    }
+}

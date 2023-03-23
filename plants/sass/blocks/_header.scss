@@ -1,0 +1,64 @@
+.header {
+
+    &__wrapper {
+        padding-top: 38px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+
+    &__logo {
+        text-decoration: none;
+        display: flex;
+        margin-bottom: 6px;
+
+        span {
+            color: #000000;
+            font-family: 'Inika';
+            font-size: 16px;
+            line-height: 21px;
+            transition: all 400ms ease;
+            padding-top: 7px;
+
+            &:hover {
+                color: $main-orange;
+                font-weight: 700;
+            }
+        }
+    }
+
+    .menu {
+        list-style: none;
+        display: flex;
+        margin-top: 5px;
+
+        &__item:last-child .menu__link {
+            padding-right: 0;
+
+        }
+
+        &__link {
+            text-decoration: none;
+            color: $links-nav;
+            padding: 0 24px 0 23px;
+            font-family: 'Inika';
+            font-size: 16px;
+            line-height: 50px;
+            transition: all 400ms ease;
+            height: 100%;
+
+
+
+            &:hover {
+                color: $main-orange;
+                font-weight: 700;
+            }
+        }
+    }
+}
+
+
+.hamburger {
+    display: none;
+}

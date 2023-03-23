@@ -1,0 +1,60 @@
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: 33%;
+    padding: 40px 0 40px 0;
+
+
+    &__link,
+    &__gitlink {
+        font-size: 20px;
+        line-height: 50px;
+        color: #000000;
+        text-decoration: none;
+        transition: all 400ms ease;
+
+        &:hover {
+            color: $main-orange;
+        }
+    }
+
+    &__link {
+        margin-left: 15px;
+    }
+
+    &__gitlink {
+        display: flex;
+        width: 169px;
+        justify-content: space-between;
+    }
+
+
+    &__social {
+        display: flex;
+        width: 185px;
+        justify-content: space-between;
+        list-style: none;
+        padding-left: 0;
+
+        &-item {
+
+            svg {
+                width: 100%;
+                height: 100%;
+
+                path {
+                    transition: all 400ms ease;
+                }
+
+            }
+
+            &:hover svg path {
+
+                fill: $main-orange;
+            }
+        }
+
+    }
+
+}

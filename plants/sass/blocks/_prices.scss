@@ -1,0 +1,187 @@
+.prices {
+    &__wrap {
+        display: flex;
+        justify-content: space-between;
+        padding: 39px 0 0 0;
+        height: 519px;
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 48px;
+        color: #000000;
+    }
+
+    &__menu {
+        margin-top: 60px;
+        min-width: 330px;
+        padding: 17px 0;
+        border: 1px solid #E3E1D5;
+        border-radius: 17px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    &__divider,
+    &__info,
+    &__price,
+    &__links {
+        display: none;
+    }
+
+    &__card {
+        margin: 16px auto;
+        width: 170px;
+        height: 50px;
+        background: $bg-section;
+        border-radius: 20px;
+        padding: 0 40px;
+        transition: all 200ms ease;
+        cursor: pointer;
+
+        &-active {
+            background: #D6E7D2;
+            height: 154px;
+
+            .prices {
+
+                &__head {
+                    height: 37px;
+                    margin-top: 6px;
+                }
+
+                &__arrow {
+                    background: #AEA1A1;
+                    transform: rotate(-180deg);
+
+                    svg path {
+                        stroke: #FFFFFF;
+                    }
+                }
+
+                &__divider {
+                    width: 100%;
+                    border: 0.5px solid #AEA1A1;
+                    margin: 0 auto;
+                    display: block;
+                }
+
+                &__info {
+                    padding-top: 6px;
+                    font-weight: 300;
+                    font-size: 10px;
+                    line-height: 10px;
+                    color: #717171;
+                    display: block;
+                }
+
+                &__price {
+                    padding-top: 6px;
+                    font-weight: 700;
+                    font-size: 16px;
+                    line-height: 20px;
+                    color: #E06733;
+                    display: block;
+
+                    &-little {
+                        font-size: 12px;
+                    }
+
+                    &-black {
+                        font-size: 12px;
+                        color: #000000;
+                    }
+                }
+
+                &__order {
+                    width: 86px;
+                    height: 25px;
+                    background: #FFFFFF;
+                    border-radius: 10px;
+                    border: none;
+                    font-weight: 700;
+                    font-size: 14px;
+                    line-height: 20px;
+                    color: #717171;
+                    cursor: pointer;
+                }
+
+
+                &__links {
+                    padding-top: 6px;
+                    display: block;
+                }
+            }
+
+
+        }
+    }
+
+    &__head {
+        height: 50px;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__name {
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 20px;
+        color: #000000;
+        margin-right: 10px;
+    }
+
+    &__arrow {
+        width: 16px;
+        height: 16px;
+        background: #D9D9D9;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    &__subtitle {
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 50px;
+        text-align: right;
+        color: #000000;
+        max-width: 455px;
+
+        .green {
+            font-weight: 700;
+            color: $main-green;
+        }
+    }
+
+    &__btn {
+        display: block;
+        margin-top: 40px;
+        margin-left: auto;
+        font-weight: 700;
+    }
+
+    &__link {
+        text-decoration: none;
+    }
+
+
+    &__img {
+        padding-top: 36px;
+
+        img {
+            display: block;
+            margin-left: auto;
+
+        }
+    }
+}

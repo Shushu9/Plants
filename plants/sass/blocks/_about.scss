@@ -1,0 +1,32 @@
+.about {
+    &__wrapper {
+        padding: 93px 0 91px 0;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__info {
+        padding-top: 68px;
+    }
+
+    &__title {
+        font-family: 'Inika';
+        font-size: 40px;
+        line-height: 52px;
+        color: $main-green;
+        max-width: 460px;
+
+        .orange {
+            font-family: 'Inika';
+            color: $main-orange;
+        }
+    }
+
+    &__desc {
+        padding-top: 38px;
+        font-size: 20px;
+        line-height: 30px;
+        color: $dark-gray;
+        max-width: 605px;
+    }
+}
